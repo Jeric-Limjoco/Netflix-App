@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <h2 class="text-white">Popular Movies</h2>
+    <div class="row">
+        <div *ngFor="let movie of popularMovies" class="col-md-2 mb-4 popular-mov zoom">
+
+            <a href="details://id"><img class="img-fluid" [src]="movie.imageUrl" (click)="onMovieClick(movie)"></a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <h2 class="text-white">Trending</h2>
+    <div class="row">
+        <div *ngFor="let movie of trendingMovies" class="col-md-2 mb-4 popular-mov zoom">
+
+            <a href="details://id"><img class="img-fluid" [src]="movie.imageUrl" (click)="onMovieClick(movie)"></a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <h2 class="text-white">TV Shows</h2>
+    <div class="row">
+        <div *ngFor="let movie of tvShows" class="col-md-2 mb-4 popular-mov zoom">
+
+            <a href="details://id"><img class="img-fluid" [src]="movie.imageUrl" (click)="onMovieClick(movie)"></a>
+        </div>
+    </div>
+</div>
